@@ -36,17 +36,17 @@ $tweaks = @(
 
 	### Service Tweaks ###
 	"SetUACLow",                    # "SetUACHigh",
-	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
+	# "EnableSharingMappedDrives",  "DisableSharingMappedDrives",
 	"DisableAdminShares",           # "EnableAdminShares",
-	# "DisableSMB1",                # "EnableSMB1",
+	"DisableSMB1",                # "EnableSMB1",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
-	# "SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
+	"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
 	"EnableCtrldFolderAccess",      # "DisableCtrldFolderAccess",
-	# "DisableFirewall",            # "EnableFirewall",
-	# "DisableDefender",            # "EnableDefender",
-	# "DisableDefenderCloud",       # "EnableDefenderCloud",
-	# "DisableUpdateMSRT",          # "EnableUpdateMSRT",
-	# "DisableUpdateDriver",        # "EnableUpdateDriver",
+	"DisableFirewall",            # "EnableFirewall",
+	"DisableDefender",            # "EnableDefender",
+	"DisableDefenderCloud",       # "EnableDefenderCloud",
+	"DisableUpdateMSRT",          # "EnableUpdateMSRT",
+	"DisableUpdateDriver",        # "EnableUpdateDriver",
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
 	"DisableHomeGroups",            # "EnableHomeGroups",
 	"DisableSharedExperiences",     # "EnableSharedExperiences",
@@ -55,15 +55,15 @@ $tweaks = @(
 	"DisableAutoplay",              # "EnableAutoplay",
 	"DisableAutorun",               # "EnableAutorun",
 	"EnableStorageSense",           # "DisableStorageSense",
-	# "DisableDefragmentation",     # "EnableDefragmentation",
+	"DisableDefragmentation",     # "EnableDefragmentation",
 	"DisableSuperfetch",            # "EnableSuperfetch",
 	"DisableIndexing",              # "EnableIndexing",
-	# "SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
+	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	"DisableHibernation",           # "EnableHibernation",
 	"DisableFastStartup",           # "EnableFastStartup",
 
 	### UI Tweaks ###
-	# "DisableActionCenter",        # "EnableActionCenter",
+	"DisableActionCenter",        # "EnableActionCenter",
 	"DisableLockScreen",            # "EnableLockScreen",
 	"DisableLockScreenRS1",         # "EnableLockScreenRS1",
 	"HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
@@ -71,11 +71,11 @@ $tweaks = @(
 	"DisableStickyKeys",            # "EnableStickyKeys",
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
-	# "EnableFileDeleteConfirm",    # "DisableFileDeleteConfirm",
-	"HideTaskbarSearchBox",         # "ShowTaskbarSearchBox",
-	"HideTaskView",                 # "ShowTaskView",
-	"ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
-	"ShowTaskbarTitles",            # "HideTaskbarTitles",
+	# "EnableFileDeleteConfirm",    "DisableFileDeleteConfirm",
+	#"HideTaskbarSearchBox",         # "ShowTaskbarSearchBox",
+	#"HideTaskView",                 # "ShowTaskView",
+	#"ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
+	#"ShowTaskbarTitles",            # "HideTaskbarTitles",
 	"HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
 	"ShowTrayIcons",                # "HideTrayIcons",
 	"ShowKnownExtensions",          # "HideKnownExtensions",
@@ -93,7 +93,7 @@ $tweaks = @(
 	"HideVideosFromThisPC",       # "ShowVideosInThisPC",
 	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
 	"SetVisualFXPerformance",       # "SetVisualFXAppearance",
-	# "DisableThumbnails",          # "EnableThumbnails",
+	"DisableThumbnails",          # "EnableThumbnails",
 	"DisableThumbsDB",              # "EnableThumbsDB",
 	# "AddENKeyboard",                # "RemoveENKeyboard",
 	"EnableNumlock",                # "DisableNumlock",
@@ -2120,7 +2120,7 @@ function Test-RegistryValue {
 
 Write-Host
 Write-Host
-Write-Host "WIN 10 Optimization Script For Windows 10 by Lyrdum"
+Write-Host "-v2.0-"
 Write-Host "==================================================="
 Write-Host "Make sure you've checked which tweaks are turned on before running this. Edit by placing # before anything you don't want to run."
 Write-Host
